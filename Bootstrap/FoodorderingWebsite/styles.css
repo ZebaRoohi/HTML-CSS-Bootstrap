@@ -1,0 +1,55 @@
+body{
+    font-family: "Roboto", sans-serif;
+   background: linear-gradient(to bottom,#69d676,#cbea5c);
+}
+.navbar-brand{
+   
+    font-weight: 500;
+}
+.navbar-nav a{
+    font-size: 14px;
+    color: #fff;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+.navbar-nav .active {
+    font-size: 14px;
+    color: #fff !important;
+    font-weight: 500;
+}
+.carousel-item img{
+    height: 70vh;
+    min-height: 300px;
+    object-fit:cover;
+}
+/* .item-padding{
+justify-content: center;
+align-items: center;
+display: flex;
+} */
+.card{
+    width: auto;
+    height:100% !important;
+}
+.card img{
+    height: 100%;
+}
+.card-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+ .button-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}  
+
+@media (max-width:500px) {
+    .card{
+        margin-bottom: 50px;
+    }
+}

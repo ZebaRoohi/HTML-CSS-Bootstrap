@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<style>
+    .container{
+        height: 100vh;
+    }
+</style>
+<body>
+    <div class="container-fluid">
+        <div class="text-bg-primary p-3">Primary with contrasting color</div>
+        <div class="text-bg-secondary p-3">Secondary with contrasting color</div>
+        <div class="text-bg-success p-3">Success with contrasting color</div>
+        <div class="text-bg-danger p-3">Danger with contrasting color</div>
+        <div class="text-bg-warning p-3">Warning with contrasting color</div>
+        <div class="text-bg-info p-3">Info with contrasting color</div>
+    </div>
+    
+  <div class="dropdown">
+    <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" >
+      Dropdown button
+    </button>
+    <ul class="dropdown-menu">
+      <li><a class="dropdown-item" href="#">Action</a></li>
+      <li><a class="dropdown-item" href="#">Another action</a></li>
+      <li><a class="dropdown-item" href="#">Something else here</a></li>
+    </ul>
+  </div>
+    <hr>
+    <h2>Links</h2>
+    <p><a href="#" class="link-primary">Primary</a></p>
+    <p><a href="#" class="link-warning">Warning</a></p>
+    <p><a href="#" class="link-danger">Danger</a></p>
+
+    <hr>
+    <h2>Buttons</h2>
+    <button type="button" class="btn btn-primary disabled">Primary</button>
+    <button type="button" class="btn btn-success">Success</button>
+    <button type="button" class="btn btn-danger">Danger</button>
+    <button type="button" class="btn btn-outline-primary">Primary</button>
+    <button type="button" class="btn btn-outline-success">Success</button>
+  <hr>
+  <!-- <h2>Alert Messages</h2>
+  <div class="alert alert-primary" role="alert">Primary Alert</div>
+  <div class="alert alert-success" role="alert">Loged in successfully</div>
+
+  <div id="liveAlertPlaceholder"><div>
+    <div class="alert alert-success alert-dismissible" role="alert">  
+         <div>Nice, you triggered this alert message!</div>  
+          <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button></div></div></div>
+  <button type="button" class="btn btn-primary" id="liveAlertBtn">Show live alert</button>
+
+  <button type="button" class="btn-close" aria-label="Close"></button> -->
+
+  <hr>
+  <h2>Toast Messages</h2>
+    <!-- Example Code -->
+    
+    <div class="toast fade show" role="alert" aria-live="assertive" aria-atomic="true">
+      <div class="toast-header">
+        <svg class="bd-placeholder-img rounded me-2" width="20" height="20" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#007aff"></rect></svg>
+        <strong class="me-auto">Bootstrap</strong>
+        <small class="text-body-secondary">11 mins ago</small>
+        <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+      </div>
+      <div class="toast-body">
+        Hello, world! This is a toast message.
+      </div>
+    </div>
+    <hr>
+    <h2>Tool tips</h2>
+    
+    <body class="p-3 m-0 border-0 bd-example m-0 border-0 tooltip-demo">
+        <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-custom-class="custom-tooltip" data-bs-title="This top tooltip is themed via CSS variables.">
+          Custom tooltip
+        </button>
+        <hr>
+        <h2>Badge</h2>
+        <button type="button" class="btn btn-primary position-relative">
+            Inbox
+            <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+            99+
+            <span class="visually-hidden">unread messages</span>
+            </span>
+        </button>
+                <span class="badge rounded-pill text-bg-primary">Primary</span>
+        
+                <hr>
+                <h2>Bread crums</h2>
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                      <li class="breadcrumb-item active" aria-current="page">Home</li>
+                    </ol>
+                  </nav>
+                  
+                  <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                      <li class="breadcrumb-item"><a href="#">Home</a></li>
+                      <li class="breadcrumb-item active" aria-current="page">Library</li>
+                    </ol>
+                  </nav>
+                  
+                  <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                      <li class="breadcrumb-item"><a href="#">Home</a></li>
+                      <li class="breadcrumb-item"><a href="#">Library</a></li>
+                      <li class="breadcrumb-item active" aria-current="page">Data</li>
+                    </ol>
+                  </nav>
+
+        <hr>
+        <h2>Drop downs</h2>
+        <!-- Example single danger button -->
+<div class="btn-group">
+    <button type="button" class="btn btn-danger dropdown-toggle" data-bs-toggle="dropdown" >
+      Action
+    </button>
+    <ul class="dropdown-menu">
+      <li><a class="dropdown-item" href="#">Action</a></li>
+      <li><a class="dropdown-item" href="#">Another action</a></li>
+      <li><a class="dropdown-item" href="#">Something else here</a></li>
+      <li><hr class="dropdown-divider"></li>
+      <li><a class="dropdown-item" href="#">Separated link</a></li>
+    </ul>
+  </div>
+<hr>
+<h2>Lists</h2>
+<ul class="list-group">
+    <li class="list-group-item">An item</li>
+    <li class="list-group-item">A second item</li>
+    <li class="list-group-item">A third item</li>
+    <li class="list-group-item">A fourth item</li>
+    <li class="list-group-item">And a fifth one</li>
+  </ul>
+
+  <hr>
+  <p class="d-inline-flex gap-1">
+    <a class="btn btn-primary" data-bs-toggle="collapse" href="#deepak">
+      Link with href
+    </a>
+    <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#deepak">
+      Button with data-bs-target
+    </button>
+  </p>
+  <div class="collapse" id="deepak">
+    <div class="card card-body">
+      Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
+    </div>
+  </div>
+  <div class="spinner-border" role="status">
+    <span class="visually-hidden">Loading...</span>
+  </div>
+</body>
+</html>

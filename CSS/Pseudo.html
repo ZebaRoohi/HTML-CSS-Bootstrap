@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    a:hover{
+        color: red;
+    }
+    .button:active{
+        background-color: green;
+    }
+    .input-feild:focus{
+        border: 13px solid red;
+    }
+    ul li:first-child{
+        font-weight: 600;
+    }
+    ul li:last-child{
+        color:red
+    }
+    ul li:nth-child(even){
+        background-color:gray;
+    }
+    p::first-letter{
+       font-size: 2em;
+       color: red;
+    }
+    p::first-line{
+        font-variant: small-caps;
+        color: blue;
+    }
+    p::after{
+        content: ' After content.';
+        font-style: italic;
+    }
+    p::before{
+        content: 'Before content.';
+        font-weight: 600;
+    }
+    p::selection{
+        background-color: yellow;
+    }
+    .opacity{
+        font-weight: 200;
+        font-size: 2em;
+        background-color:blue;
+        opacity: 0.5;
+    }
+    img{
+        opacity: 1.0;
+    }
+</style>
+<body>
+    <h3>Example of Pseudo classes</h3>
+    <a href="#">Hover on the link</a>
+    <button class="button">Click Me</button>
+    <input type="text" class="input-feild">
+    <ul>
+        <li>First</li>
+        <li>Second</li>
+        <li>Third</li>
+    </ul>
+    <hr>
+    <h3>Example of Pseudo elements,it is prefix with (::)</h3>
+    <p>This is sample para of psuedo element</p>
+    <p>psuedo element with first-letter and first-letter,This is sample para of psuedo element</p>
+<hr>
+<h3>Opacity with css</h3>
+<h2 class="opacity">Opacity in CSS is used to control the transparency of an element.
+</h2>
+<img src="flag.png">
+</body>
+</html>

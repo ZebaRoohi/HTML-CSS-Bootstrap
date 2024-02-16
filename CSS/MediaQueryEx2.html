@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .container{
+        max-width: 960px;
+        /* border: 1px solid #333; */
+
+    }
+    .main{
+        width: 70%;
+        background: gray;
+        padding: 10px;
+        margin: 10px;
+        border: 1px solid black;
+        float: left;
+    }
+    .side{
+        width: 30%;
+        background: lightblue;
+        padding: 10px;
+        border: 1px solid black;
+        float: left;
+    }
+    @media(max-width:767px){
+        .main,.side{
+            float: none;
+            width: 100%;
+        }
+
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="main">
+            <h2>Main content</h2>
+            <p>This is the box which is occupying 70% width of the screen.</p>
+        </div>
+        <div class="side">
+            <h2>Side bar content</h2>
+            <p>This the box which is occupying 30% of the width of the screen.</p>
+        </div>
+    </div>
+</body>
+</html>

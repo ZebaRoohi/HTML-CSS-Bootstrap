@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .container{
+        display: flex;
+        border: 1px solid #333;
+    }
+    .item{
+        border: 1px solid red;
+        background-color: brown;
+        width: 100px;
+        height: 100px;
+        margin: 10px;
+        padding: 10px;
+    }
+    .flex-start{
+        justify-content: flex-start;
+    }
+    .flex-end{
+        justify-content: flex-end;
+    }
+</style>
+<body>
+    <h3>Example of Flex start and flex end</h3>
+    <div class="container flex-start">
+        <div class="item">Item1</div>
+        <div class="item">Item2</div>
+        <div class="item">Item3</div>
+    </div>
+    <div class="container flex-end">
+        <div class="item">Item1</div>
+        <div class="item">Item2</div>
+        <div class="item">Item3</div>
+    </div>
+</body>
+</html>

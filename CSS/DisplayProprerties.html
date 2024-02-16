@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .display{
+        margin-bottom: 10px;
+    }
+    .inline{
+        display: inline;
+        background-color: aqua;
+        border: 1px solid black;
+        padding: 5px;
+    }
+    .block{
+        display: block;
+        background-color: bisque;
+        width: 170px;
+        height: 150px;
+        padding: 5px;
+        border: 1px solid black;
+    }
+    .inline-block{
+        display: inline-block;
+        background-color: blue;
+        width: 150px;
+        height: 150px;
+        
+    }
+</style>
+<body>
+    <h3>Display Properties</h3>
+    <div class="display">
+      <p>Display inline:In inline you cannot define height or width.It automatically adjust its height and width according to content</p>  
+        <p class="inline">Inline element</p>
+        <p class="inline">Another inline element,Another inline elementAnother inline element</p>
+    </div>
+    <div class="display">
+        Display block:For elements having block display,you can define height and width.It always starts on new line,
+        <p class="block">Block element</p>
+        <p class="block">Another Block element</p>
+    </div>
+    <div class="display">
+        Display inline block:For elements like inline it doesnot starts on new line and height and width can be defined
+        <p class="inline-block">inline block element</p>
+        <p class="inline-block">Another inline block element</p>
+    </div>
+</body>
+</html>

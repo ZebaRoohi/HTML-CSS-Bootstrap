@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .container{
+        width: 150px;
+        height: 150px;
+        border: 1px solid black;
+        margin: 10px;
+    }
+    .visible-box{
+        overflow: visible;
+    }
+    .hidden-box{
+        overflow: hidden;
+    
+    }
+    .scroll-box{
+        overflow: scroll;
+    }
+    .auto-box{
+        overflow: auto;
+        background-color: aquamarine;
+    }
+    .overflowX-box{
+        overflow-x: scroll;
+    }
+    .overflowy-box{
+        overflow-y:scroll
+    }
+</style>
+<body>
+    <h3>Css overflow properties</h3>
+    <div class="container visible-box">
+        visible (default): Content is not clipped, and it can overflow the element's box.
+        visible (default): Content is not clipped, and it can overflow the element's box.
+        <!-- visible (default): Content is not clipped, and it can overflow the element's box.
+        visible (default): Content is not clipped, and it can overflow the element's box. -->
+    </div>
+    <div class="container hidden-box">
+        hidden: Content that overflows is clipped, and it's not visible.
+        hidden: Content that overflows is clipped, and it's not visible.
+        hidden: Content that overflows is clipped, and it's not visible.
+        hidden: Content that overflows is clipped, and it's not visible.
+    </div>
+    <div class="container scroll-box">
+        scroll: Scrollbars are added to the element to allow users to scroll and view the overflowing content.
+        scroll: Scrollbars are added to the element to allow users to scroll and view the overflowing content.
+        scroll: Scrollbars are added to the element to allow users to scroll and view the overflowing content.
+    </div>
+    <div class="container auto-box">
+        Scrollbars are added if the content overflows, but they only appear when necessary.
+        Scrollbars are added if the content overflows, but they only appear when necessary.
+        Scrollbars are added if the content overflows, but they only appear when necessary.
+     
+    </div>
+    <div class="container overflowX-box">
+        This will add scroll bar in horizontal direction..
+       
+    </div>
+    <div class="container overflowy-box">
+        This will add scroll bar in veritical direction..
+        This will add scroll bar in veritical direction..
+        This will add scroll bar in veritical direction..
+    </div>
+</body>
+</html>
